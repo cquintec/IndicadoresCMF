@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Listado de Valores</h1>
+    <h2> {{ tipoIndicador }} </h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Fecha</th>
+            <th>Valor</th>
+        </tr>
+        <!-- <tr ng-repeat="profe in profesores"> -->
+        <tr ng-repeat="item in listaIndicadores ">
+            <td>{{ item.Fecha }}</td>
+            <td>{{ item.Valor }}</td>
+        </tr>
+    </table>
+</div>

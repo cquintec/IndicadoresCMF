@@ -1,0 +1,13 @@
+<h1>Indicadores</h1>
+<br>
+<div class="row" style="align-items: center;">
+	<table class="table table-striped">
+		<tr ng-repeat="indicadores in listaIndicadores">
+			<td>
+			    <h1>    
+                    <a  ng-href="#!/listaValores/{{ indicadores.nombre }}">{{ indicadores.nombre }}</a><a ng-href="#!/detalle/{{ indicadores.nombre }}">   ></a>
+                </h1>
+            </td>
+		</tr>
+	</table>
+</div>

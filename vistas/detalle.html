@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Detalle</h1>
+    <h2> {{ detalleIndicador }} </h2>
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <canvas id="graph"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-body" >
+              <div class="row" ng-repeat="indicador in infoIndicadores">
+                <h3>
+                  <div class="col-sm-4">{{ indicador.Valor }}</div>
+                </h3>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="row" ng-repeat="indicador in infoIndicadores">
+                <div class="col-sm-8">Nombre</div>
+                <div class="col-sm-4">{{ detalleIndicador }}</div>
+                <div class="col-sm-8">Fecha</div>
+                <div class="col-sm-4">{{ indicador.Fecha }}</div>
+                <div class="col-sm-8">Unidad</div>
+                <div class="col-sm-4">Peso</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+</div>
